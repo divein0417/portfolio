@@ -1,0 +1,154 @@
+@charset "utf-8";
+*{margin:0; padding:0; list-style:none;}
+a{text-decoration:none;}
+a:link,a:link,a:visited,a:hover,a:active{color:#333;}
+
+body{
+	width:1920px;
+	margin:0 auto;
+}
+header{
+	margin:0 auto;
+	width:1200px;
+	height:80px;
+	
+}
+#gnb{
+	float:right;
+}
+#gnb>li{
+	height:80px;
+	line-height:80px;
+	float:left;
+	display:block;
+	padding:0 20px;
+
+}
+
+#gnb::after,
+#content::after,
+#bnr::after,
+#content::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+#logo{
+	float:left;
+	height:23px;
+	width:225px;
+	margin-top:25px;
+		
+}
+#logo>a{
+	display:block;
+	width:100%; height:100%;
+	background:url('../images/logo.png') no-repeat center;
+	text-indent:-999px;
+	overflow:hidden;
+}
+
+h2{
+	display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+#bnr{
+   width:100%;
+   position:relative;
+}
+#bnr>ul>li:first-child{
+   position:absolute;
+   float:left;
+   display:block;
+   bottom:240px; left:15px;
+}
+#bnr>ul>li:last-child{
+   position:absolute;
+   float:right;
+   display:block;
+   bottom:240px; right:15px;
+}
+
+#content{
+   width:1200px;
+   height:100px;
+   display:block;
+   margin:20px 440px;
+   position:relative;
+}
+
+#content>ul>li{
+	width:400px;
+	height:100%;
+	float:left;
+	display:block;
+}
+#content>ul>li>a{
+	background:url('../images/link-thum01.png') no-repeat;
+	position:absolute;
+	width:80px; height:80px;
+	left:0px;
+}
+#content>ul>li>a>dl{
+	width:200px;
+	position:relative;
+	left:90px; bottom:-30px;
+	font-size:12px;
+}
+#content>ul>li>a>dl>dt{
+	color:blue;
+}
+
+#content>ul>li:nth-child(2)>a{
+	background:url('../images/link-thum02.png');
+	position:absolute;
+	width:80px; height:80px;
+	left:400px;
+}
+
+#content>ul>li:nth-child(3)>a{
+	background:url('../images/link-thum03.png');
+	position:absolute;
+	width:80px; height:80px;
+	left:800px;
+}
+
+footer{
+	width:100%;
+	height:200px;
+	border-top:1px solid #ddd;
+	position:relative;
+	margin:0 auto;
+	font-size:12px;
+}
+h3{
+	width:225px; height:23px;
+	background:url('../images/foot-logo.png') no-repeat;
+	text-indent:-9999px;
+	overflow:hidden;
+	position:absolute;
+	left:650px;
+	top:50px;
+}
+
+.ft_list>li>a{
+	float:left;
+	padding:10px;
+	position:relative;
+	left:900px;
+	top:40px;
+}
+
+address{
+	width:1280px;
+	position:relative;
+	font-style:normal;
+	left:533px;
+	top:70px;
+}

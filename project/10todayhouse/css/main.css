@@ -1,0 +1,318 @@
+@charset "utf-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+
+a,a:link,a:visited,a:hover,a:active{color:#333; text-decoration:none;}
+
+html{
+    font-size:14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:400
+}
+
+body{
+    width:100%;
+}
+
+.wrap{
+    width:1200px;
+    margin:0 auto;
+    padding:0;
+}
+
+h2{display:none;}
+
+header{padding-top:30px; height:170px;}
+
+.hdtop{
+    position:relative;
+}
+#logo{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+#logo a img{
+    width:50px;
+}
+
+/*탑메뉴*/
+#top_menu{
+    display:flex;
+    position:absolute;
+    right:0;
+}
+#top_menu li{
+    padding-top:15px;
+    padding-left:30px;
+}
+
+#gnb{
+    padding-top:70px;
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    font-weight:600;
+}
+#gnb li{
+    text-align: center;
+    width:10%;
+}
+#gnb li a{
+    display:block;
+    height:40px;
+}
+
+#gnb li a:hover{
+    border-bottom:3px solid #78b3c5;
+    color:#78b3c5;
+}
+
+.bnr{
+    margin-bottom:100px;
+}
+
+#brand_con{
+    height:501px;
+    position:relative;
+    background:url("../images/brand.png") no-repeat center left;
+    margin-bottom:100px;
+}
+.line{
+    width:25%;
+    position:absolute;
+    right:0;
+    border-top:5px solid #78b3c5;
+}
+
+.brandtxt{
+    background: rgba(255,255,255,0.6);
+    width:40%;
+    height:45%;
+    position:absolute;
+    right:0;
+    top:60px;
+    transform: translateX(-50%);
+}
+.brandtxt p:nth-of-type(1){
+    color:#78b3c5;
+    font-size:1.5rem;
+    font-weight: 600;
+    padding:30px;
+}
+.brandtxt p:nth-of-type(2){
+    padding: 0 30px;
+    line-height:2;
+    color:#666;
+}
+
+.brandtxt p span{
+    background:#deeff6;
+}
+
+#brand_con figure{
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+#brand_con figure img{
+    margin:20px;
+    cursor:pointer;
+}
+
+/*호버효과*/
+#brand_con figure img:hover{
+    transition: all 0.6s;
+    transform:scale(1.1);
+}
+
+
+#popular_con{
+    margin-bottom:150px;
+    position:relative;
+}
+
+#popular_con span:nth-of-type(1){
+    font-size:3rem;
+    color:#78b3c5;
+    font-weight:600;
+}
+#popular_con span:nth-of-type(2){
+    color:#bbb;
+    line-height: 2;
+    display:block;
+    margin-top:10px;
+}
+
+#popular_con span:last-of-type{
+    width:90px;
+    height:35px;
+    line-height:34px;
+    color:#78b3c5;
+    display:inline-block;
+    text-align:center;
+    cursor: pointer;
+    border: 1px solid #78b3c5;
+    font-size:0.9rem;
+    margin-top:10px;
+    
+}
+.popularimg{
+    display: flex;
+    position:absolute;
+    right:0;
+    top:0;
+}
+.popularimg img{
+    width:210px;
+    margin-left:20px;
+}
+
+#story_con{
+    margin-bottom:100px;
+}
+
+#story_con .title,
+#story_con .subtitle{
+    text-align: center;
+}
+
+#story_con .title{
+    font-size:1.5rem;
+    font-weight: 600;
+    margin-bottom:20px;
+    color:#666;
+}
+#story_con .subtitle{
+    color:#aaa;
+    margin-bottom:50px;
+}
+.storywrap{
+    height:900px;
+    background-image:url("../images/story_1.png"),url("../images/story_2.png");
+    background-position:top right, bottom left;
+    background-repeat:no-repeat;
+    position: relative;
+}
+.liner{
+    border-left:5px solid #78b3c5;
+    height:20%;
+    margin-left:15%; 
+    position:relative;
+    top:70px;
+}
+
+#left_text{
+    line-height:2.5;
+    padding:10px 0;
+    position:absolute;
+    left:30px;
+}
+#left_text span,
+#right_text span{
+    font-size:1.3rem;
+    color:#236680;
+    font-weight: 600;
+}
+#left_text p,
+#right_text p{
+    color:#333;
+}
+
+.liner_right{
+    border-right:5px solid #78b3c5;
+    height:20%;
+    position:relative;
+    margin-right:15%;
+    bottom:-50%;
+}
+#right_text{
+    line-height:2.5;
+    padding:10px 0;
+    position:absolute;
+    right:30px;
+    text-align: right;
+}
+
+#insta_con{
+    margin-bottom:100px;
+}
+#insta_con .title,
+#insta_con .subtitle{
+    text-align: center;
+}
+
+#insta_con .title{
+    font-size:1.5rem;
+    font-weight: 600;
+    margin-bottom:20px;
+    color:#666;
+}
+#insta_con .subtitle{
+    color:#666;
+    margin-bottom:50px;
+}
+#insta_con .subtitle a{
+    color:#78b3c5;
+}
+
+#insta_con ul{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+#insta_con ul a figure{
+    position: relative;
+}
+#insta_con figcaption{
+    background-color: rgba(0,0,0,0.7);
+    top: 0; left: 0;
+    width:100%; height:100%;
+    color: #fff; text-align: center;
+    line-height: 200px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+}
+#insta_con a:hover figcaption{opacity: 1;}
+#insta_con figcaption span{
+    border:1px solid #fff;
+    padding:5px 10px;
+    font-size:0.9rem;
+}
+
+footer{
+    height:300px;
+    background:#deeff6;
+    text-align: center;
+}
+.info{
+    display:flex;
+    justify-content: center;
+    padding:40px;
+}
+.info li{
+    width:10%;
+    font-weight:600;
+}
+.info li a{
+    color:#888;
+}
+
+address{
+    line-height:2;
+    font-size:0.9rem;
+    color:#666;
+}
+
+.ftlogo{
+    display:flex;
+    justify-content: center;
+    padding:20px;
+}
+.ftlogo li{
+    margin-right:20px;
+}

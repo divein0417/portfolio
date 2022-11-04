@@ -1,0 +1,213 @@
+@charset "utf-8";
+@import 
+url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+@import "layout.css";
+
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+a{text-decoration:none;}
+a:link,a:visited,a:hover,a:active{color:#333;}
+#logo{
+    background:url("../images/logo.png") no-repeat center/100%;
+    width:250px;
+    text-indent:-9999px;
+    overflow:hidden;
+}
+
+#gnb{
+    font-size:1.2rem;
+    font-weight:500;
+}
+#gnb a:hover{
+    color:#bf8b40;
+    font-weight:700;
+}
+
+h3{
+    color:#222;
+    font-size:1.5rem;
+    padding:10px;
+    font-weight:bold;
+}
+
+#notice, 
+#visited, 
+#data_box, 
+.inner_sbox, 
+.inner_mbox
+{position:relative;}
+
+.btn{
+    color:#222;
+    position:absolute;
+    right:10px;
+    top:10px;
+    font-size:1.1rem;
+    font-weight: 800;
+}
+#contents>div:nth-of-type(1){
+    background:url("../images/visualbnr.jpg") no-repeat;
+    cursor:pointer;
+    text-indent:-9999px;
+}
+
+#notice ul{
+    margin-top:10px;
+}
+#notice ul li{
+    padding:10px;
+    color:#9a9a9a;
+    text-align: center;
+}
+#program{
+    background:url("../images/program.jpg") no-repeat;
+    text-indent:-9999px;
+    cursor:pointer;
+}
+
+#time_info{
+    background:url("../images/time_info.jpg") no-repeat;
+    text-indent:-9999px;
+    cursor:pointer;
+}
+
+#visited figure{
+    padding:20px;
+}
+
+#visited a img{
+    width:250px;
+}
+
+#visited a img:last-child{
+    margin-top:22px;
+}
+
+#visited figcaption{
+    margin-top:5px;
+}
+
+#todaywriter{
+    background: url('../images/bgcircle.png') no-repeat center;
+    position:relative;
+} 
+
+#todaywriter ul{
+    display:flex;
+    width:100%;
+    font-size:1.2rem;
+    font-weight: 600;
+    text-align:center;
+}
+
+#todaywriter ul li:nth-of-type(2),
+#todaywriter ul li:nth-of-type(3){
+    position:absolute;
+    top:50%;
+    left:55%;
+}
+
+
+.data{
+    display:flex;
+    justify-content: center;
+    padding-top:35px;
+    text-align:center;
+    width:100%;
+}
+.data li:nth-of-type(2){
+    height:100%;
+    width:50%;
+    padding-top:20px;
+}
+.data li span{
+    font-size:1.4rem;
+    line-height: 3;
+    font-weight: 600;
+}
+
+
+/*소문예지 기증품 오시는길*/
+.s_zero ul{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+    padding-top:5px;
+}
+.s_zero ul li{
+    width:100%;
+    height:100%;
+}
+.s_zero ul li:nth-of-type(odd){
+    padding-top:60px;
+    padding-left:12px;
+}
+
+#roadview img{
+    width:90%;
+    padding-left:15px;
+}
+
+
+#info_box li{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    padding-top:15px;
+    text-align: center;
+    position:relative;
+}
+
+#info_box li a h4{
+    position:absolute; 
+    z-index:999;
+    top:50%; left:50%;
+    color:#fff;
+    font-size:1.0rem;
+    transform:translate(-50%,-50%);
+    opacity: 0;
+}
+#info_box li a::after{
+	content:'';
+    display:flex;
+    justify-content: center;
+    width:89%;
+    height:78%;
+    padding-top:15px;
+    background:rgba(0,0,0,0.6);
+    position:absolute;
+    z-index:99;
+    opacity:0;
+    overflow:hidden;
+    top:15px; left:16px;
+}
+#info_box li a:hover h4,
+#info_box li a:hover::after{
+    opacity:1;
+    transition: all .4s;
+}
+
+#organ_box{
+    display:block;
+    position:relative;
+}
+
+.organ{
+    position:absolute;
+    left:75px;
+}
+.organ li{
+    margin-top:15px;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    color:#aaa;
+}
+footer div{
+    line-height:2;
+}
